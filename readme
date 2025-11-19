@@ -1,0 +1,39 @@
+# Lab11 - Programação Concorrente
+
+Este repositório contém dois arquivos `.java` desenvolvidos para o laboratório 11 da disciplina de Programação Concorrente.
+
+## Arquivos
+
+1. **MyPool.java**:
+Implementa um pool de threads simples para executar tarefas em paralelo. Fazendo o "Hello" de N tarefas diferentes, bem como dizendo se cada valor i < N é primo ou não, cada uma em uma thread separada. O pool é configurado para usar NTHREADS threads.
+
+2. **FutureHello.java**:
+Implementa o uso de `Future` para executar tarefas de forma assíncrona usando NTHREADS. Ele verifica se os números de 0 a N são primos, utilizando um `Callable` que retorna um `Future<Long>`. Também faz a soma de 1 a 100 para cada valor de 0 a N utilizando um `Callable`. O programa cria um pool de threads e executa as tarefas, aguardando os resultados.
+
+## Como Compilar
+
+Para compilar os arquivos, utilize o `javac` no terminal. Execute os seguintes comandos:
+
+```bash
+javac MyPool.java
+```
+
+```bash
+javac FutureHello.java
+```
+
+## Como Executar
+
+Após a compilação, execute os programas com os comandos abaixo:
+
+### Executar `MyPool.java`
+
+```bash
+java MyPool
+```
+
+### Executar `FutureHello.java`
+
+```bash
+java FutureHello
+```
